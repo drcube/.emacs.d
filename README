@@ -1,0 +1,7 @@
+This .emacs.d directory is based on the Emacs Starter Kit.
+
+It includes my own customizations and will be updated over time as I continue to customize my emacs.
+
+Current customizations include color themes and the init.el file.
+
+Anyone may copy this repository, but it is primarily being used so I can learn git. 
