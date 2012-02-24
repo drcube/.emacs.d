@@ -53,5 +53,23 @@
 (tool-bar-mode -1) 
 ;; line numbers on the left
 (global-linum-mode t)
+;;; Recent Files
+(require 'recentf)
+(recentf-mode 1)     ;; Enable
+(setq recentf-max-menu-items 25) ;; how many to remember
+(global-set-key "\C-x\ \C-r" 'recentf-open-files) ;; bind to C-x C-r 
+;;; Helpful at work on Cygwin, must alter at home:
+;;; SLIME Lisp interpreter for Emacs
+;(add-to-list 'load-path "/home/joshbari/bin/slime") ; path where slime was unzipped
+;(setq inferior-lisp-program "/usr/bin/clisp.exe") ; current lisp system
+;(require 'slime)
+;(slime-setup)
+;;; Printing
+;(setenv "PRINTER" "PDFCreator")
+;(cond ((eq system-type 'windows-nt)
+;       (setq ps-printer-name "PDFCreator")y
+;       (setq ps-printer-name-option "-d")
+;       (setq ps-lpr-command "/bin/lpr.exe")
+;))
 ;;
 ;;; init.el ends here
